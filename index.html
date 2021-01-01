@@ -10,35 +10,37 @@
 
 <body class="font-body bg-gray-100">
     <!-- Navbar -->
-    <div class="bg-gray-50 h-16">
-        <nav class="flex items-center justify-between px-64 mx-auto py-2">
-            <h1>
-                <img class="h-12" src="public/images/logo.png" alt="Logo" />
-            </h1>
-            <div>
-                <ul>
-                    <li>
-                        <a href="" class="mr-12 text-xl hover:text-pink-500"> Home</a>
-                        <a href="" class="mr-12 text-xl hover:text-pink-500"> Service</a>
-                        <a href="" class="mr-12 text-xl hover:text-pink-500"> Clients</a>
-                        <a href="" class="mr-12 text-xl hover:text-pink-500"> News</a>
-                        <a href="" class="mr-12 text-xl hover:text-pink-500"> Contacts</a>
-                    </li>
-                </ul>
+    <div class="bg-white">
+        <nav class="px-10 mx-auto py-2 md:flex md:items-center md:justify-between">
+            <div class="flex items-center justify-between">
+                <h1>
+                    <img class="h-12" src="public/images/logo.png" alt="Logo" />
+                </h1>
+                <button class="h-6 w-6 md:hidden" id="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
             </div>
-            <div>
+            <div class="hidden  flex-col items-center md:flex md:flex-row md:space-x-6" id="links">
+                <a href="" class="text-xl hover:text-pink-500"> Home</a>
+                <a href="" class="text-xl hover:text-pink-500"> Service</a>
+                <a href="" class="text-xl hover:text-pink-500"> Clients</a>
+                <a href="" class="text-xl hover:text-pink-500"> News</a>
+                <a href="" class="text-xl hover:text-pink-500"> Contacts</a>
                 <button class="btn">Signup</button>
-                <button class="btn">Login</button>
             </div>
         </nav>
     </div>
 
     <!-- Header - Hero Section -->
-    <header class="flex items-center justify-between px-64 my-32">
-        <div class="w-1/2">
-            <img class="h-96" src="public/images/header.png" alt="Header" />
+    <header class="flex  flex-wrap items-center justify-between px-10 md:px-64 mx-auto my-32 text-center">
+        <div class="w-full md:w-1/2">
+            <img class="h-96 mx-auto" src="public/images/header.png" alt="" />
         </div>
-        <div class="w-1/2 font-sans font-thin space-y-8">
+        <div class="w-full md:w-1/2 font-sans font-thin space-y-8 mt-20 md:mt-0">
             <h2 class="text-3xl">Multipurpose landing template</h2>
             <h1 class="text-6xl font-bold text-primary">Beautifully</h1>
             <h1 class="text-6xl font-bold text-primary">simple, code.</h1>
@@ -52,26 +54,26 @@
     </header>
 
     <!-- Services Section -->
-    <div class="services flex items-center justify-between mb-20 mt-10 px-64 px-auto text-gray-600">
-        <div class="flex flex-col items-center space-y-3">
+    <div class="services flex flex-wrap items-center justify-between mb-20 mt-10 px-10 md:px-64 px-auto text-gray-600">
+        <div class="w-full md:w-1/4 mt-2 md:mt-0 flex flex-col items-center space-y-3">
             <img src="public/images/strategy-1.png" alt="Strategy-1" />
             <h2 class="text-xl text-primary">Startegy</h2>
             <p class="font-mono font-thin">We will work with you</p>
             <p class="font-mono font-thin">to develope tailwind apps</p>
         </div>
-        <div class="flex flex-col items-center space-y-3">
+        <div class="w-full md:w-1/4 mt-10 md:mt-0 flex flex-col items-center space-y-3">
             <img src="public/images/strategy-2.png" alt="Strategy-2" />
             <h2 class="text-xl text-primary">Automation</h2>
             <p class="font-mono font-thin">We will work with you</p>
             <p class="font-mono font-thin">to develope tailwind apps</p>
         </div>
-        <div class="flex flex-col items-center space-y-3">
+        <div class="w-full md:w-1/4 mt-10 md:mt-0 flex flex-col items-center space-y-3">
             <img src="public/images/strategy-3.png" alt="Strategy-3" />
             <h2 class="text-xl text-primary">Deplpoyment</h2>
             <p class="font-mono font-thin">We will work with you</p>
             <p class="font-mono font-thin">to develope tailwind apps</p>
         </div>
-        <div class="flex flex-col items-center space-y-3">
+        <div class="w-full md:w-1/4 mt-10 md:mt-0 flex flex-col items-center space-y-3">
             <img src="public/images/strategy-4.png" alt="Strategy-4" />
             <h2 class="text-xl text-primary">Education</h2>
             <p class="font-mono font-thin">We will work with you</p>
@@ -83,15 +85,15 @@
     <div class="my-20">
         <div class="text-center">
             <h1 class="text-4xl text-primary">Pricing</h1>
-            <p class="font-mono font-thin">
+            <p class="font-mono font-thin text-sm">
                 Offer multiple packages or monthly subscriptions? Why not showcase your
             </p>
-            <p class="font-mono font-thin">
+            <p class="font-mono font-thin text-sm">
                 featured price plans here, bold and beautifully.
             </p>
         </div>
-        <div class="grid grid-cols-3 gap-3 container px-64 mx-auto my-10">
-            <div class="bg-white rounded-3xl  w-80 mt-10 hover:shadow-2xl p-5 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 container px-10 md:px-64 mx-auto my-10">
+            <div class="bg-white rounded-3xl  w-80 mt-10 hover:shadow-2xl p-5 text-center mx-auto">
                 <h1 class="text-5xl text-primary">$199</h1>
                 <h2 class="text-blue-400">Basic</h2>
                 <p class="my-4">Starter plan with all the basics included</p>
@@ -137,7 +139,7 @@
                     <button class="btn">Enquire</button>
                 </ul>
             </div>
-            <div class="bg-white rounded-3xl h-128 w-80 hover:shadow-2xl border-8 p-5 text-center border-blue-400 border-dashed">
+            <div class="bg-white rounded-3xl h-128 w-80 hover:shadow-2xl border-8 p-5 text-center border-blue-400 border-dashed mx-auto">
                 <h1 class="text-5xl text-primary">$599</h1>
                 <h2 class="text-blue-400">Growth</h2>
                 <p class="my-4">Starter plan with all the basics included</p>
@@ -193,7 +195,7 @@
                     <button class="btn">Enquire</button>
                 </ul>
             </div>
-            <div class="bg-white rounded-3xl  w-80 mt-10 hover:shadow-2xl p-5 text-center">
+            <div class="bg-white rounded-3xl w-80 mt-10 hover:shadow-2xl p-5 text-center mx-auto">
                 <h1 class="text-5xl text-primary">$1299</h1>
                 <h2 class="text-blue-400">Cooperate</h2>
                 <p class="my-4">Starter plan with all the basics included</p>
@@ -279,6 +281,17 @@
         </div>
     </div>
 
+    <script>
+        menu = document.getElementById('menu');
+        links = document.getElementById('links');
+
+        menu.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            links.classList.toggle('flex');
+            links.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
