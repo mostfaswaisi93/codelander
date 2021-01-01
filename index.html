@@ -8,8 +8,31 @@
     <link href="/public/app.css" rel="stylesheet">
 </head>
 
-<body class="bg-red-200 text-xl text-blue-900">
-    <h1 class="text-xl">Hello TailwindCSS</h1>
+<body class="font-body">
+    <!-- Navbar -->
+    <div class="bg-gray-50 h-16">
+        <nav class="flex items-center justify-between px-64 mx-auto py-2">
+            <h1>
+                <img class="h-12" src="public/images/logo.png" alt="Logo">
+            </h1>
+            <div>
+                <ul>
+                    <li>
+                        <a href="" class="mr-12 text-xl hover:text-pink-500"> Home</a>
+                        <a href="" class="mr-12 text-xl hover:text-pink-500"> Service</a>
+                        <a href="" class="mr-12 text-xl hover:text-pink-500"> Clients</a>
+                        <a href="" class="mr-12 text-xl hover:text-pink-500"> News</a>
+                        <a href="" class="mr-12 text-xl hover:text-pink-500"> Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button class="btn"> Signup</button>
+                <button class="btn"> Login</button>
+            </div>
+        </nav>
+    </div>
+
 </body>
 
 </html>
